@@ -10,41 +10,41 @@ public class SimulacaoCaixaSupermercado {
 
     private final java.util.Random rng = new java.util.Random(42);
 
-    public void setNumeroCaixas(int numeroCaixas) { this.numeroCaixas = numeroCaixas; }
-    public void setMediaAtendimentos(int mediaAtendimentos) { this.mediaAtendimentos = mediaAtendimentos; }
-    public void setMediaTempoAtendimentoPorCliente(double media) { this.mediaTempoAtendimentoPorCliente = media; }
-    public void setDesvioPadraoTempoAtendimentoPorCliente(double desvio) { this.desvioPadraoTempoAtendimentoPorCliente = desvio; }
+    public void setNumeroCaixas(int n) { this.numeroCaixas = n; }
+    public void setMediaAtendimentos(int n) { this.mediaAtendimentos = n; }
+    public void setMediaTempoAtendimentoPorCliente(double mu) { this.mediaTempoAtendimentoPorCliente = mu; }
+    public void setDesvioPadraoTempoAtendimentoPorCliente(double sigma) { this.desvioPadraoTempoAtendimentoPorCliente = sigma; }
 
     private double tempoAtendimentoNormalTruncado() {
-        double numeroAleatorio = rng.nextGaussian();
-        double tempoCalculado = mediaTempoAtendimentoPorCliente + desvioPadraoTempoAtendimentoPorCliente * numeroAleatorio;
-        return (tempoCalculado < TEMPO_MINIMO_ATENDIMENTO) ? TEMPO_MINIMO_ATENDIMENTO : tempoCalculado;
+        double z = rng.nextGaussian();
+        double s = mediaTempoAtendimentoPorCliente + desvioPadraoTempoAtendimentoPorCliente * z;
+        return (s < TEMPO_MINIMO_ATENDIMENTO) ? TEMPO_MINIMO_ATENDIMENTO : s;
     }
 
     public double simular() {
-        double somaTemposTotais = 0.0;
-        int clientesPorCaixa = mediaAtendimentos / numeroCaixas;
-        int clientesExtras = mediaAtendimentos % numeroCaixas;
+        double total = 0.0;
+        int clientesBase = mediaAtendimentos / numeroCaixas;
+        int resto = mediaAtendimentos % numeroCaixas;
         
-        for (int caixa = 0; caixa < numeroCaixas; caixa++) {
-            if (caixa == mediaAtendimentos) break;
-            if (caixa < clientesExtras) {
-                somaTemposTotais += SimularCaixa(clientesPorCaixa + 1);
+        for (int i = 0; i < numeroCaixas; i++) {
+            if (i == mediaAtendimentos) break;
+            if (i < resto) {
+                total += SimularCaixa(clientesBase + 1);
             } else {
-                somaTemposTotais += SimularCaixa(clientesPorCaixa);
+                total += SimularCaixa(clientesBase);
             }
         }
-        return somaTemposTotais / mediaAtendimentos;
+        return total / mediaAtendimentos;
     }
 
     public double SimularCaixa(int numeroClientes) {
-        double tempoAcumulado = 0.0;
-        double tempoTotalClientes = 0.0;
+        double soma = 0.0;
+        double temp = 0.0;
         
-        for (int cliente = 0; cliente < numeroClientes; cliente++) {
-            tempoAcumulado += tempoAtendimentoNormalTruncado();
-            tempoTotalClientes += tempoAcumulado;
+        for (int i = 0; i < numeroClientes; i++) {
+            soma += tempoAtendimentoNormalTruncado();
+            temp += soma;
         }
-        return tempoTotalClientes;
+        return temp;
     }
 }
