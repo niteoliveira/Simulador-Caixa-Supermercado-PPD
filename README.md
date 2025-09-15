@@ -24,8 +24,8 @@ O objetivo é **simular diferentes cenários** e analisar o impacto de variávei
 - N = 100 clientes  
 - 1000 rodadas  
 
-- **Média do Tempo de Atendimento:** [Seu resultado aqui]  
-- **Desvio-Padrão do Tempo de Atendimento:** [Seu resultado aqui]  
+<img width="640" height="275" alt="image" src="https://github.com/user-attachments/assets/66ffcb61-5324-4c1b-8eb2-a66bc87f6062" />
+
 
 ---
 
