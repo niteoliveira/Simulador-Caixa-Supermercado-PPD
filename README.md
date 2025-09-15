@@ -73,3 +73,6 @@ Explique em um parágrafo por que este simulador é considerado **estocástico**
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
+2. Execute o Main.java
+   -altere os valores da simulação na Main.
+
