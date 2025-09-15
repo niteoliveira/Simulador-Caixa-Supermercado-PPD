@@ -55,6 +55,8 @@ Descreva como a variação do **desvio-padrão (σ)** impacta os resultados méd
 **Análise:**  
 <img width="657" height="178" alt="image" src="https://github.com/user-attachments/assets/55860771-4df9-423f-97f0-6de9d1aa0f66" />
 
+A curva norma tem seu pico na média. O desvio padrão apenas demostra a dispersão dos dados,quando maior o dp mais larga a curva,quanto menor mais estreito a curva. Por meio do teste mudando o dp,foi notório que mesmo mudando o dp os resultados médios da simulação não alteravam muito, isso porque o só altera a dispersã. Mas, caso o dp aumente muito o valor, ai sim há mudanças drástica nas médias.
+
 
 ---
 
