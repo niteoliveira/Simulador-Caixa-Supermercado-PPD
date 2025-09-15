@@ -35,7 +35,9 @@ Analise e compare os resultados ao variar o número de caixas de **1 para 2 e 3*
 Discuta como a adição de mais caixas afeta o tempo médio de atendimento.  
 
 **Resultados:**  
-- [Seus resultados e observações aqui]  
+<img width="640" height="275" alt="image" src="https://github.com/user-attachments/assets/d99f28cc-3118-4c86-ac74-f86cb1635d57" />
+<img width="629" height="273" alt="image" src="https://github.com/user-attachments/assets/dfa3889f-e573-4cad-b7fb-68fcf1fa9cc3" />
+<img width="617" height="272" alt="image" src="https://github.com/user-attachments/assets/3cbbdbca-cdec-4337-ab1a-058d31e9bd4c" />
 
 ---
 
@@ -44,7 +46,8 @@ Discuta como a adição de mais caixas afeta o tempo médio de atendimento.
 Descreva como a variação do **desvio-padrão (σ)** impacta os resultados médios da simulação.  
 
 **Análise:**  
-- [Sua análise e observações aqui]  
+<img width="657" height="178" alt="image" src="https://github.com/user-attachments/assets/55860771-4df9-423f-97f0-6de9d1aa0f66" />
+
 
 ---
 
