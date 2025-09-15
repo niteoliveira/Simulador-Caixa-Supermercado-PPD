@@ -35,10 +35,14 @@ Analise e compare os resultados ao variar o número de caixas de **1 para 2 e 3*
 Discuta como a adição de mais caixas afeta o tempo médio de atendimento.  
 
 **Resultados:**  
+
 1)
+
 <img width="640" height="275" alt="image" src="https://github.com/user-attachments/assets/d99f28cc-3118-4c86-ac74-f86cb1635d57" />
+
 2)
 <img width="629" height="273" alt="image" src="https://github.com/user-attachments/assets/dfa3889f-e573-4cad-b7fb-68fcf1fa9cc3" />
+
 3)
 <img width="617" height="272" alt="image" src="https://github.com/user-attachments/assets/3cbbdbca-cdec-4337-ab1a-058d31e9bd4c" />
 
