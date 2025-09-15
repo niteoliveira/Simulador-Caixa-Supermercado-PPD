@@ -65,8 +65,7 @@ A curva norma tem seu pico na média. O desvio padrão apenas demostra a dispers
 Explique em um parágrafo por que este simulador é considerado **estocástico** e como essa característica o torna uma representação realista de situações do mundo real.  
 
 **Explicação:**  
-- [Seu parágrafo aqui]  
-
+- Um modelo estocástico é regido por variáveis aleatórias,então, não tem como prever uma saída mas sim chegar a uma probablidade de um resultado. Além, o mundo real é conduzido por eventos aleatórios igual o exemplar estocástico. Assim, o simulador ultiliza dados aleatórios ,igual o modelo, e gera resultados que mais se aproximam da realidade.
 ---
 
 ## ⚙️ Como Usar o Simulador
