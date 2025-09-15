@@ -12,7 +12,6 @@ O objetivo é **simular diferentes cenários** e analisar o impacto de variávei
 
 ## 📝 Seção de Respostas
 
----
 
 ### 1️⃣ Simulação Padrão
 
